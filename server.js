@@ -4,7 +4,7 @@ app.use(express.static("./public"));
 app.get("/", function(req,res){
 res.sendFile(__dirname+"/index.html");
 });
-app.post("/",function(req,rex){
+app.post("/",function(req,res){
 res.sendFile(__dirname+"/index2.html");
 });
 app.listen(process.env.PORT||3000,function(){
